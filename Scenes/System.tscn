@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/System.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Sun.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Planet.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Spaceship.tscn" type="PackedScene" id=4]
+
+[node name="System" type="Node2D"]
+position = Vector2( 512, 300 )
+script = ExtResource( 1 )
+semi_major_radius = 480.0
+semi_minor_radius = 250.0
+orbit_altitude = 8.0
+min_planet_radius = 10
+max_planet_radius = 25
+Planet = ExtResource( 3 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Star" parent="YSort" instance=ExtResource( 2 )]
+radius = 80.0
+
+[node name="Spaceship" parent="YSort" instance=ExtResource( 4 )]
