@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/spaaace.ogg-68e06fafb69a49411bf1559fcab9d176.oggstr"
+
+[deps]
+
+source_file="res://spaaace.ogg"
+dest_files=[ "res://.import/spaaace.ogg-68e06fafb69a49411bf1559fcab9d176.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
